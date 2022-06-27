@@ -10,7 +10,7 @@ import Combine
 
 struct ContentView: View {
     
-    static let practiceSeconds = 30
+    static let practiceSeconds = 5 * 60
     
     @Environment(\.scenePhase) var scenePhase
     
