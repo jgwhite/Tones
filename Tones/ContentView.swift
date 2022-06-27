@@ -18,6 +18,7 @@ struct ContentView: View {
         ZStack {
             Color(note.letter)
                 .ignoresSafeArea()
+                .zIndex(0)
             VStack {
                 Spacer()
                 Text(note.letter)
@@ -35,13 +36,20 @@ struct ContentView: View {
                     .drawingGroup()
                 Spacer()
             }
+            .id("note-\(note.letter)")
+            .zIndex(1)
+            .transition(.opacity.combined(with: .slide))
+                        
         }
         .onReceive(timer) { _ in
             var newNote = note
             while newNote == note {
                 newNote = Note.allCases.randomElement()!
             }
-            self.note = newNote
+            
+            withAnimation {
+                self.note = newNote
+            }
         }
     }
     

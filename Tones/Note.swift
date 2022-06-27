@@ -27,7 +27,7 @@ enum Note: CaseIterable {
         switch self {
         case .C: return "Do"
         case .D: return "Re"
-        case .E: return "Me"
+        case .E: return "Mi"
         case .F: return "Fa"
         case .G: return "Sol"
         case .A: return "La"

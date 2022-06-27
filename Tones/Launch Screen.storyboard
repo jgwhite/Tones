@@ -39,7 +39,7 @@
     </scenes>
     <resources>
         <namedColor name="Key">
-            <color red="0.96078431610000004" green="0.81176471709999998" blue="0.82745099070000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.86666667460000002" green="0.32156863810000003" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
